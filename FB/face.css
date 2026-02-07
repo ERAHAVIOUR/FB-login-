@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+
+/* Above margin and padding 0 to every default margin and padding and user-select for escaping from getting selected anything on web*/
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*100vh that takes 100% viewport of any screen with margin 0 for anything then display makes center everything*/
+
+h1 {
+    color: royalblue;
+    font-size: 44px;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+/*headings and sub-headings*/
+
+.login {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*main div where input and button are stored*/
+
+.login input {
+    box-sizing: border-box;
+    width: 300px;
+    height: 40px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.login input:focus {
+    border: 2px solid #1877f2;
+}
+
+/*inside login div inputs are styled above*/
+
+button {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+
+}
+
+/*inside login div buttons are styled above*/
+
+#login {
+    background-color: #1877f2;
+    color: white;
+    transition: all 0.7s;
+}
+
+#login:hover {
+    background-color: #1197c2;
+}
+
+#create {
+    background-color: #5dbd4d;
+    color: white;
+    transition: all 0.7s;
+}
+
+#create:hover {
+    background-color: #11cd4d;
+}
+
+/*#login and #create two diffrent buttons are styled above*/
+
+#forgotten {
+    color: royalblue;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#forgotten:hover {
+    text-decoration: underline;
+}
+
+/*forgotten password styled above*/
+
+.line {
+    width: 300px;
+    height: 0.1px;
+    border: 0.2px solid black;
+
+}
+
+/*made one line after forgotten password*/
+
+
+
+.top1 p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.top1 p #last-a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.top1 p #last-a:hover {
+    text-decoration: underline;
+}
+
+/*it comes below of login that is create a page that is styled here*/
+
+@media only screen and (max-width:768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .top {
+        text-align: center;
+    }
+}
+
+/*made it responsive through media queries*/
